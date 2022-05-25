@@ -1,0 +1,26 @@
+
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+nav {
+    /* margin-inline: 5rem; */
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+nav img {
+    height: 8rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+ justify-content: flex-end;
+    /* margin: 0;
+    padding: 0; */
+}
+nav li {
+    font-weight: bold;
+   margin: 1rem;
+}
