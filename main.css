@@ -237,19 +237,28 @@ footer {
     margin-inline: 0.5rem;
     margin-top: 2rem;
 }
+
 .footerBox h1 {
     font-size: 0.8rem;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.670);
 }
+
 .footerBox p {
-    text-decoration: none;
     font-size: 0.6rem;
     color: rgba(255, 255, 255, 0.670);
 }
+
 .mediaIcons {
     font-size: 15pt;
 }
-.mediaIcons i {
-    margin-inline: 2pt;
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    margin-right: 2pt;
+    text-decoration: none;
+    color: white;
 }
