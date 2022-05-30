@@ -1,16 +1,11 @@
 var bookedOption = document.getElementById("selectedBooking")
 var serviceDescription = document.querySelector(".serviceDescription")
-bookedOption.addEventListener('change', function() {
-   console.log(this.value)
-   serviceDescription.innerHTML = ""
-   if (this.value == "stortServiceHardtail") {
-    //    const option = {
-    //        title: "Stort Service (Hardtail)",
-    //        descriptions: ["Grundig vask af cykel", "Komplet adskillelse af cykel", "Rengøring/opsmøring af dele", "Opretning af hjul", "Samling samt justering", "Bike Protect fra Muc-Off"]
-    //    }
-      const descriptions = ["Grundig vask af cykel", "Komplet adskillelse af cykel", "Rengøring/opsmøring af dele", "Opretning af hjul", "Samling samt justering", "Bike Protect fra Muc-Off"]
-      descriptions.forEach(addParagraphToDescription)
-   }
+bookedOption.addEventListener('change', function () {
+    console.log(this.value)
+    serviceDescription.innerHTML = ""
+    const option = getOption(this.value)
+    option.descriptions.forEach(addParagraphToDescription)
+
 
 })
 
@@ -21,7 +16,28 @@ function addParagraphToDescription(text) {
     var textNode = document.createTextNode(text)
     console.log(textNode)
     paragraph.appendChild(textNode)
-
     serviceDescription.appendChild(paragraph)
     // serviceDescription.appen
+}
+
+// test = {
+//     arr: ["hello", "goodbye"]
+// }
+// console.log(test.arr[1])
+
+function getOption(optionText) {
+    switch (optionText) {
+        case ("stortServiceHardtail") || ("stortServiceFullSuspension"):
+            return option = {
+                title: "Stort Service (Hardtail)",
+                descriptions: ["Grundig vask af cykel", "Komplet adskillelse af cykel", "Rengøring/opsmøring af dele", "Opretning af hjul", "Samling samt justering", "Bike Protect fra Muc-Off"]
+            }
+            break;
+        // case ("stortServiceFullSuspension"):
+        //     return option = {
+        //         title: "Stort Service (Full Suspension)",
+        //         descriptions: ["hello", "farewell"]
+            // }
+    }
+
 }
