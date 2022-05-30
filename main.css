@@ -56,6 +56,7 @@ body {
     height: auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 /* .serviceBox > * {
@@ -254,11 +255,8 @@ footer {
 }
 
 a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    margin-right: 2pt;
+    /* width: fit-content;
+    margin-right: 2pt; */
     text-decoration: none;
     color: white;
 }
