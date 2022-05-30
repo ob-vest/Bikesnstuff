@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/booking.css">
+    <script src="https://kit.fontawesome.com/98841c9d3e.js" crossorigin="anonymous" defer></script>
+    <script src="/script/main.js" defer></script>
+    <script src="/script/booking.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <img src="/images/bikesnstuff.jpg" alt="bikesnstuff logo">
+        <button class="mobile-nav-toggle">
+            <a class="fa-solid fa-bars"></a>
+        </button>
+        <ul data-visible="false">
+            <li><a href="">Booking</a></li>
+            <li><a href="">Galleri</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Om Os</a></li>
+        </ul>
+    </nav>
+    <h1>Booking</h1>
+
+    <form>
+        <!-- <label for="cars">Valgt dato:</label> -->
+        <select name="Booking" id="selectedBooking">
+            <option value="lilleService">Lille Service</option>
+            <option value="stortServiceHardtail">Stort Service (Hardtail)</option>
+            <option value="stortServiceFullSuspension">Stort Service (Full Suspension</option>
+            <option value="kompletServiceHardtail">Komplet Service (Hardtail)</option>
+            <option value="kompletServiceFullSuspension">Komplet Service (Full Suspension)</option>
+        </select>
+    </form>
+    <section>
+        <h2>
+            Valgt Service
+        </h2>
+        <p class="serviceDescription">
+            Grundig vask af cykel
+            Komplete adskillelse af cykel
+            Rengøring af alle dele
+            Opsmøring af alle dele
+            Bike Protect fra Muc-Off
+            Samling samt justering
+            Opretning af hjul
+        </p>
+    </section>
+</body>
+
+</html>
