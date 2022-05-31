@@ -30,7 +30,7 @@ h1 {
 
 .gallery p {
     padding: 1rem;
-    background-color: var(--accentColor);
+    /* background-color: var(--accentColor); */
 }
 
 
