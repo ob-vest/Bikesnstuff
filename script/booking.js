@@ -1,6 +1,6 @@
 var bookedOption = document.getElementById("selectedBooking")
 var serviceDescription = document.querySelector(".serviceDescription")
-
+var priceAmount = document.querySelector(".priceAmount")
 
 
 updateDescription(bookedOption.value)
@@ -18,6 +18,7 @@ bookedOption.addEventListener('change', function () {
 function updateDescription(optionValue) {
     const option = getOption(optionValue)
     option.descriptions.forEach(addParagraphToDescription)
+    priceAmount.innerHTML = option.price
 }
 
 function addParagraphToDescription(text) {
@@ -36,31 +37,36 @@ function getOption(optionText) {
         case ("lilleService"):
             return option = {
                 title: "Stort Service (Hardtail)",
-                descriptions: ["Grundig vask af cykel", "Gennemgang af cykel", "Opspænding af alle bolte", "Opretning af hjul", "Justering af gear", "Justering af bremser", "Smørelse af bevægelige dele"]
+                descriptions: ["Grundig vask af cykel", "Gennemgang af cykel", "Opspænding af alle bolte", "Opretning af hjul", "Justering af gear", "Justering af bremser", "Smørelse af bevægelige dele"],
+                price: "499,-"
             }
             break
         case ("stortServiceHardtail"):
             return option = {
                 title: "Stort Service (Hardtail)",
-                descriptions: ["Grundig vask af cykel", "Komplet adskillelse af cykel", "Rengøring/opsmøring af dele", "Opretning af hjul", "Samling samt justering", "Bike Protect fra Muc-Off"]
+                descriptions: ["Grundig vask af cykel", "Komplet adskillelse af cykel", "Rengøring/opsmøring af dele", "Opretning af hjul", "Samling samt justering", "Bike Protect fra Muc-Off"],
+                price: "999,-"
             }
             break
         case ("stortServiceFullSuspension"):
             return option = {
                 title: "Stort Service (Full Suspension)",
-                descriptions: ["Grundig vask af cykel", "Komplet adskillelse af cykel", "Rengøring/opsmøring af dele", "Opretning af hjul", "Samling samt justering", "Bike Protect fra Muc-Off"]
+                descriptions: ["Grundig vask af cykel", "Komplet adskillelse af cykel", "Rengøring/opsmøring af dele", "Opretning af hjul", "Samling samt justering", "Bike Protect fra Muc-Off"],
+                price: "1499,-"
             }
             break
             case ("kompletServiceHardtail"):
                 return option = {
                     title: "Stort Service (Full Suspension)",
-                    descriptions: ["Stort Service Plus", "Air Can Service", "Lower Leg Service", "Udskiftning af gearkabler", "Opsætning af forgaffel", "Opsætning af bagdæmper"]
+                    descriptions: ["Stort Service Plus", "Air Can Service", "Lower Leg Service", "Udskiftning af gearkabler", "Opsætning af forgaffel", "Opsætning af bagdæmper"],
+                    price: "1599,-"
                 }
                 break
             case ("kompletServiceFullSuspension"):
                 return option = {
                     title: "Stort Service (Full Suspension)",
-                    descriptions: ["Stort Service Plus", "Air Can Service", "Lower Leg Service", "Udskiftning af gearkabler", "Opsætning af forgaffel", "Opsætning af bagdæmper"]
+                    descriptions: ["Stort Service Plus", "Air Can Service", "Lower Leg Service", "Udskiftning af gearkabler", "Opsætning af forgaffel", "Opsætning af bagdæmper"],
+                    price: "2499,-"
                 }
                 break
      
@@ -82,7 +88,7 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
   modal.style.display = "block";
   setTimeout(function() {
-      modal.style.display = "none"}, 2500)
+      modal.style.display = "none"}, 2000)
 }
 
 // When the user clicks on <span> (x), close the modal
