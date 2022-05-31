@@ -1,13 +1,24 @@
 var bookedOption = document.getElementById("selectedBooking")
 var serviceDescription = document.querySelector(".serviceDescription")
+
+
+
+updateDescription(bookedOption.value)
+
+
 bookedOption.addEventListener('change', function () {
     console.log(this.value)
     serviceDescription.innerHTML = ""
-    const option = getOption(this.value)
-    option.descriptions.forEach(addParagraphToDescription)
+
+    updateDescription(this.value)
 
 
 })
+
+function updateDescription(optionValue) {
+    const option = getOption(optionValue)
+    option.descriptions.forEach(addParagraphToDescription)
+}
 
 function addParagraphToDescription(text) {
     console.log(serviceDescription)
@@ -17,13 +28,8 @@ function addParagraphToDescription(text) {
     console.log(textNode)
     paragraph.appendChild(textNode)
     serviceDescription.appendChild(paragraph)
-    // serviceDescription.appen
-}
 
-// test = {
-//     arr: ["hello", "goodbye"]
-// }
-// console.log(test.arr[1])
+}
 
 function getOption(optionText) {
     switch (optionText) {

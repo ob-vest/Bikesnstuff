@@ -28,32 +28,55 @@
             <li><a href="">Om Os</a></li>
         </ul>
     </nav>
-    <h1>Booking</h1>
-
-    <form>
-        <!-- <label for="cars">Valgt dato:</label> -->
-        <select name="Booking" id="selectedBooking">
-            <option value="lilleService">Lille Service</option>
-            <option value="stortServiceHardtail">Stort Service (Hardtail)</option>
-            <option value="stortServiceFullSuspension">Stort Service (Full Suspension</option>
-            <option value="kompletServiceHardtail">Komplet Service (Hardtail)</option>
-            <option value="kompletServiceFullSuspension">Komplet Service (Full Suspension)</option>
-        </select>
-    </form>
     <section>
-        <h2>
-            Valgt Service
-        </h2>
-        <p class="serviceDescription">
-            Grundig vask af cykel
-            Komplete adskillelse af cykel
-            Rengøring af alle dele
-            Opsmøring af alle dele
-            Bike Protect fra Muc-Off
-            Samling samt justering
-            Opretning af hjul
-        </p>
+        <h1>Booking</h1>
+        <form>
+            <!-- <label for="booking">Valgt dato:</label> -->
+            <select name="Booking" id="selectedBooking">
+                <option value="lilleService">Lille Service</option>
+                <option value="stortServiceHardtail">Stort Service (Hardtail)</option>
+                <option value="stortServiceFullSuspension">Stort Service (Full Suspension)</option>
+                <option value="kompletServiceHardtail">Komplet Service (Hardtail)</option>
+                <option value="kompletServiceFullSuspension">Komplet Service (Full Suspension)</option>
+            </select>
+        </form>
     </section>
+    <section class="dateAndService">
+        <div>
+            <h2>
+                Valgt Dato
+            </h2>
+            <p>27.maj 2022</p>
+
+
+        </div>
+        <div>
+            <h2>
+                Valgt Service
+            </h2>
+            <div class="serviceDescription"></div>
+        </div>
+
+    </section>
+    <section class="order">
+        <div class="orderPrice">
+            <p>
+                inkl. moms
+            </p>
+            <div class="priceLabel" >
+                <h1 class="priceText">
+                    PRIS
+                </h1>
+                <h1>
+                    999,-
+                </h1>
+            </div>
+
+        </div>
+
+        <button class="orderConfirmation">Bekræft</button>
+    </section>
+
 </body>
 
 </html>

@@ -1,12 +1,62 @@
-.bookingSelection {
+#selectedBooking {
     text-align: center;
-    width: 170pt;
     height: 30pt;
-    background-color: transparent;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
     color: white;
-
+    border-radius: 5pt;
+    border-color: rgba(255, 255, 255, 0.381);
 }
 
 h2 {
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+p {
     color: rgba(255, 255, 255, 0.671);
+    font-size: small;
+}
+
+.dateAndService {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.priceText {
+    color: var(--secondaryAccentColor);
+    margin-right: 1rem;
+}
+
+.priceLabel {
+    display: flex;
+}
+
+.orderPrice h1 {
+    margin-top: 0;
+}
+
+.orderPrice p {
+    color: rgba(255, 255, 255, 0.287);
+    margin-bottom: 0;
+}
+
+.orderConfirmation {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    background-color: var(--accentColor);
+    border: none;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 30pt;
+    margin: 1rem;
 }
