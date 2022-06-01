@@ -1,0 +1,37 @@
+.blogHeader img {
+    width: 100%;
+}
+
+h1 {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.blogHeader h1 {
+    font-size: 2rem;
+    margin-block: 1rem;
+}
+
+.blogContent {
+    margin: 2rem;
+}
+
+.articleHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.articleHeader img {
+width: 100%;
+    object-fit: contain;
+    border-radius: 10pt;
+    /* padding-inline: 2rem; */
+}
+.greenWrapper {
+    background-color: var(--accentColor);
+    border-radius: 10pt;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    margin-block: 2rem;
+}
