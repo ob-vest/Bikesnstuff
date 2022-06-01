@@ -123,14 +123,17 @@ footer {
 }
 
 .footerBox h1 {
+    justify-content: left;
     font-size: 0.8rem;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.670);
+    margin-left: 0 !important;
 }
 
 .footerBox p {
     font-size: 0.6rem;
     color: rgba(255, 255, 255, 0.670);
+    padding: 0 !important;
 }
 
 .mediaIcons {
