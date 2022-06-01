@@ -1,0 +1,47 @@
+.blogHeader img {
+    width: 100%;
+}
+
+h1 {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.blogHeader h1 {
+    font-size: 2rem;
+    margin-block: 1rem;
+}
+
+.blogBox {
+    background-color: var(--accentColor);
+    margin: 1rem;
+    padding-inline: 1rem;
+    border-radius: 5pt;
+}
+
+.blogBox h2 {
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.blogBox p {
+    padding-block: 1rem;
+}
+
+.blogs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogs button {
+    background-color: var(--accentColor);
+    border: none;
+    color: white;
+    width: 90pt;
+    height: 30pt;
+    /* padding-inline: 1rem;
+    padding-block: 0.8rem; */
+    border-radius: 20pt;
+}
