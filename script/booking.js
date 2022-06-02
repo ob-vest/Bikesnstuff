@@ -3,7 +3,7 @@ var serviceDescription = document.querySelector(".serviceDescription")
 var priceAmount = document.querySelector(".priceAmount")
 
 
-updateDescription(bookedOption.value)
+initialDescription()
 
 
 bookedOption.addEventListener('change', function () {
@@ -12,9 +12,33 @@ bookedOption.addEventListener('change', function () {
 
     updateDescription(this.value)
 
-
 })
+function initialDescription() {
+    let urlString = document.URL
+    console.log(window.location.href)
+    if (urlString.includes("#book1")) {
+        document.getElementById("selectedBooking").value = "lilleService"
+        // bookedOption = "stortServiceHardtail"
+        // updateDescription("stortServiceHardtail")
+        updateDescription(bookedOption.value)
+    }
+    else if (urlString.includes("#book2")) {
+        document.getElementById("selectedBooking").value = "stortServiceHardtail"
+        // bookedOption = "stortServiceHardtail"
+        // updateDescription("stortServiceHardtail")
+        updateDescription(bookedOption.value)
+    }
+    else if (urlString.includes("#book3")) {
+        document.getElementById("selectedBooking").value = "kompletServiceHardtail"
+        // bookedOption = "stortServiceHardtail"
+        // updateDescription("stortServiceHardtail")
+        updateDescription(bookedOption.value)
+    }
+    else { 
+        updateDescription(bookedOption.value)
+    }
 
+}
 function updateDescription(optionValue) {
     const option = getOption(optionValue)
     option.descriptions.forEach(addParagraphToDescription)
