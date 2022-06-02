@@ -26,6 +26,7 @@ h1 {
 .aboutMe img {
     height: 200pt;
     width: auto;
+    object-fit: contain;
 }
 
 .gallery p {
