@@ -35,7 +35,7 @@ h1 {
     align-items: center;
 }
 
-.blogs button {
+.readMore {
     background-color: var(--accentColor);
     border: none;
     color: white;
@@ -44,4 +44,7 @@ h1 {
     /* padding-inline: 1rem;
     padding-block: 0.8rem; */
     border-radius: 20pt;
+}
+.readMore:hover {
+    cursor: pointer;
 }
