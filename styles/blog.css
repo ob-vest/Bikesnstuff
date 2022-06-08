@@ -10,7 +10,7 @@
 
 @media (min-width: 40em) {
     .blogBox {
-        width: 20rem;
+        width: 30rem;
     }
 
 
@@ -26,6 +26,7 @@
         flex-direction: row;
         align-items: center;
     }
+  
 
 
 }
@@ -36,6 +37,9 @@
         /* grid-template-rows:repeat(auto-fill,auto); */
         /* grid-gap:10px; */
         grid-template-columns: 400px 400px auto;
+    }
+    .blogBox {
+        width: 20rem;
     }
 }
 
@@ -59,6 +63,7 @@ h1 {
     margin: 1rem;
     padding-inline: 1rem;
     border-radius: 5pt;
+    height: 200pt;
 }
 
 .blogBox h2 {
@@ -68,6 +73,8 @@ h1 {
 
 .blogBox p {
     padding-block: 1rem;
+    text-overflow: clip;
+    height: 300pt;
 }
 
 .blogs {
@@ -78,6 +85,10 @@ h1 {
 }
 
 .readMore {
+    display: flex;
+    justify-content: center;
+}
+.readMore input {
     background-color: var(--accentColor);
     border: none;
     color: white;
@@ -88,6 +99,6 @@ h1 {
     border-radius: 20pt;
 }
 
-.readMore:hover {
+.readMore input:hover {
     cursor: pointer;
 }
